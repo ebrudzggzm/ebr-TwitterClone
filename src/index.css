@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #242424;
+    color: white;
+}
+
+.feed{
+    display: grid;
+    grid-template-columns: 1fr minmax(400px,600px) 1fr;
+}
+
+*::-webkit-scrollbar{
+background: none;
+width: 8px;
+}
+*::-webkit-scrollbar-thumb{
+    background: rgb(67,67,67);
+    border-radius: 3px;
+    }
