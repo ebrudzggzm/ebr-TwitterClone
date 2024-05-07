@@ -3,8 +3,10 @@ import { initializeApp } from "firebase/app";
 import { getAuth,GoogleAuthProvider} from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAFN-XFtHa_x8rRM66shizeNuNMKTNyw38",
+  apiKey:`${import.meta.env.VITE_API_KEY}`,
   authDomain: "ebr-my.firebaseapp.com",
   projectId: "ebr-my",
   storageBucket: "ebr-my.appspot.com",
